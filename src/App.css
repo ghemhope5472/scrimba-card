@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #0b0811;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    display: flex;
+    justify-content: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
+  width: 317px;
+  background: #1a1b21;
+  height: 740px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 5rem;
+}
+
+.image-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container > img {
+  width: 400px;
+  margin-left: -40px;
+}
+
+.prof-name {
   color: white;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 21px auto 7px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.prof-position {
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f3bf99;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prof-site {
+  margin-top: 6px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  line-height: 150%;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+}
+
+.email-btn,
+.linkedin-btn {
+  background: #ffffff;
+  padding: 5px 13px 9px 11px;
+
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 115px;
+  height: 34px;
+  margin: 9px;
+}
+
+.linkedin-btn {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: #5093e2;
+  color: #ffffff;
+}
+
+.email-btn {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #374151;
+}
+
+i {
+  margin-right: 7px;
+}
+
+.about-container {
+  padding: 10px 36px;
+  margin-top: 0;
+}
+
+.about-container > p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  color: #dcdcdc;
+  line-height: 150%;
+}
+
+.about-container > h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+}
+
+.footer-container {
+  background: #161619;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container > i {
+  color: #918e9b;
+  font-size: 30px;
+  margin: auto 10px;
+}
+
+
+.icon-container{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 95px;
+    right: 510px;
+    cursor: pointer;
+}
+
+.icon-container > i{
+    font-size: 25px;
+}
+
+.card-light{
+    width: 317px;
+    background: #F5F5F5;
+    height: 740px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 5rem;
+}
+
+.card-light > .prof-name{
+    color: #2B283A;
+}
+
+.card-light > .prof-position{
+    color:  #F47D27;
+}
+
+.card-light > .prof-site{
+    color: #4A4E74;
+}
+
+.card-light > .about-container > p{
+    color: #2B283A;
+}
+
+.card-light > .about-container > h4{
+    color: #2B283A;
+}
+
+.card-light > .footer-container{
+    background:  #D5D4D8;
 }

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Info from './components/Info'
+import About from './components/About'
+import Footer from './components/Footer';
+// import {useState} from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function App() {
+
+//   const [ click, setClick ] = useState(false)
+//   const handleClick = () => setClick(!click)
+
+
+//   return (
+//     < div className='container'>
+//      <div className="icon-container" onClick={handleClick}>
+//         <i class={ click ? "fas fa-moon" : "fas fa-sun"}></i>
+//      </div>
+//     <div className={ click ? 'card-light' : 'card'}>
+//        < Info />
+//        < About />
+//        < Footer />
+//     </div>
+ 
+//     </div>
+//   );
+// }
+
+function App(){
+  return(
+    <h1>App</h1>
+  )
 }
 
 export default App;
